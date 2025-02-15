@@ -1,0 +1,107 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;   
+    opacity: .7;
+}
+/* ----------TITLE--------- */
+h1,h6,h5 {
+    padding: 3px;
+    color: rgb(73,73,73);
+    background-color:rgba(53, 53, 53, 0);
+}
+h1 {
+    font-size: 2.4rem;
+    background-color:rgba(53, 53, 53, 0);
+}
+h5 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6rem;
+}
+h6 {
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.4rem;
+    text-align: center;
+}
+#ref {
+    margin-top: 20px;
+}
+.title {
+    margin-top: 50px;
+    cursor:default;
+    background-blend-mode: multiply;
+    background-color: rgba(248, 248, 248, 0);
+    margin-bottom: 25px;
+    text-align: center;
+}
+/* ----------END TITLE--------- */
+
+body {
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.188),rgba(0, 0, 0, 0.155)), url(olga-thelavart-5Xkaq7I1iEk-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position: center;
+}
+
+.container {
+    display: grid;
+    height: 650px;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px 5px 10px 5px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(248,248,248);
+    border:15px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, rgb(53, 53, 53) 0%, rgb(27, 27, 27) 100%) 1;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.794), 10px 7px 20px rgba(0, 0, 0, 0.298) inset;
+    /* make border linear gradiant for lighting */
+}
+
+/* CHESSBOARD */
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    height: 333px;
+    width: 333px;
+    margin: 10px auto ;
+    background-color: #ffffff;
+    border:3px solid;
+    border-color: rgb(78, 78, 78);
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    
+    height: 41px;
+    width: 41px;
+    background-color: whitesmoke;
+    border:1px solid #a3a3a3;
+    align-self: center;
+}
+
+.gray {
+    height: 41px;
+    width: 41px;
+    background-color: rgb(224, 224, 224);
+    border:1px solid #a3a3a3;
+}
+/* END  CHESSBOARD */
+
+

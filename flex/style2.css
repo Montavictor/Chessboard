@@ -2,15 +2,20 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: .7;
+    cursor: pointer;
 }
 
 /* ----------TITLE--------- */
 h1,
-h6,
 h5 {
     padding: 3px;
-    color: rgb(73, 73, 73)
+    color: rgb(73, 73, 73);
 }
 
 h1 {
@@ -24,10 +29,10 @@ h5 {
 }
 
 h6 {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.4rem;
     text-align: center;
+    color:rgb(146, 146, 146) ;
 }
 
 #ref {
@@ -35,7 +40,12 @@ h6 {
 }
 
 .title {
+    margin-top: 50px;
     cursor: default;
+    background-blend-mode: multiply;
+    background-color: rgba(248, 248, 248, 0);
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 /* ----------END TITLE--------- */
@@ -44,14 +54,13 @@ body {
     display: flex;
     max-width: 100%;
     height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.188), rgba(0, 0, 0, 0.155)), url(olga-thelavart-5Xkaq7I1iEk-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.188), rgba(0, 0, 0, 0.155)), url(https://images.unsplash.com/photo-1603513268838-1d171f4243cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     place-items: center;
     justify-content: center;
     overflow-x: hidden;
-
 }
 
 .container {
@@ -71,14 +80,12 @@ body {
     border-style: solid;
     border-image: linear-gradient(to bottom right, rgb(53, 53, 53) 0%, rgb(27, 27, 27) 100%) 1;
     box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.794), 10px 7px 20px rgba(0, 0, 0, 0.298) inset;
-    /* make border linear gradiant for lighting */
 }
-
 
 .chessboard {
     display: flex;
-    height: 333px;
-    width: 333px;
+    height: 332px;
+    width: 332px;
     margin: 10px auto;
     background-color: #ffffff;
     border: 3px solid;
@@ -103,19 +110,6 @@ body {
     border: 1px solid #a3a3a3;
 }
 
-.title {
-    background-color: rgba(248, 248, 248, 0);
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    opacity: .7;
-    cursor: pointer;
-}
-
 /* BUTTON */
 .button {
     padding: 6px 13px;
@@ -124,7 +118,6 @@ img {
     color: rgb(78, 78, 78);
     font-weight: 700;
     cursor: pointer;
-    border-radius: 5px;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -139,9 +132,8 @@ img {
     position: absolute;
     bottom: -100%;
     left: 0;
-    /* border-radius: 50%; */
     z-index: -1;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .button:hover {
@@ -160,4 +152,18 @@ img {
 
 #git:hover {
     color: rgb(248, 248, 248);
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.chessboard-position {
+    display: none;
+}
+.hidden-checkbox:checked ~ .chessboard-position {
+    display: flex;
+}
+.hidden-checkbox:checked ~ .chessboard-default {
+    display: none;
 }

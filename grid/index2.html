@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard Project 3</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+         <!----------TOGGLE BUTTON------------->
+       
+        <!----------TITLE------------->
+        <div class="title">
+            <h1>Game of the Century</h1>
+            <h5>Donald Byrne vs Bobby Fisher</h5>
+            <h6>New York (1956)</h6>
+    
+        </div>
+
+        <input type="checkbox" id="toggle-button" class="hidden-checkbox">
+            <label for="toggle-button" class="button">
+                <h6>Arrange Pieces</h6>
+            </label>
+       
+        <!----------CHESSBOARD 1------------->
+        <div class="chessboard chessboard-position">
+            <!-- COLUMN 1 -->
+            <div class="column">
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+            </div>
+            <!-- COLUMN 2 -->
+            <div class="column">
+                <div class="gray"><img src="Wqueen.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Bbishop.svg"></div>
+                <div class="white"><img src="Bbishop.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+            </div>
+            <!-- COLUMN 3 -->
+            <div class="column">
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Bknight.svg"></div>
+                <div class="white"><img src="Brook.svg"></div>
+                <div class="gray"><img src="Wking.svg"></div>
+            </div>
+            <!-- COLUMN 4 -->
+            <div class="column">
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+            </div>
+            <!-- COLUMN 5 -->
+            <div class="column">
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Wknight.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+            </div>
+            <!-- COLUMN 6 -->
+            <div class="column">
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+            </div>
+            <!-- COLUMN 7 -->
+            <div class="column">
+                <div class="white"></div>
+                <div class="gray"><img src="Bking.svg"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Wpawn.svg"></div>
+                <div class="gray"></div>
+            </div>
+            <!-- COLUMN 8 -->
+            <div class="column">
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Wpawn.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+            </div>
+        </div>
+
+        <!----------CHESSBOARD 2------------->
+        <div class="chessboard chessboard-default">
+            <!-- COLUMN 1 -->
+            <div class="column">
+                <div class="white"><img src="Wrook.svg"></div>
+                <div class="gray"><img src="Wpawn.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Brook.svg"></div>
+            </div>
+            <!-- COLUMN 2 -->
+            <div class="column">
+                <div class="gray"><img src="Wknight.svg"></div>
+                <div class="white"><img src="Wpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Bpawn.svg"></div>
+                <div class="white"><img src="Bknight.svg"></div>
+            </div>
+            <!-- COLUMN 3 -->
+            <div class="column">
+                <div class="white"><img src="Wbishop.svg"></div>
+                <div class="gray"><img src="Wpawn.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Bbishop.svg"></div>
+            </div>
+            <!-- COLUMN 4 -->
+            <div class="column">
+                <div class="gray"><img src="Wqueen.svg"></div>
+                <div class="white"><img src="Wpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Bpawn.svg"></div>
+                <div class="white"><img src="Bqueen.svg"></div>
+            </div>
+            <!-- COLUMN 5 -->
+            <div class="column">
+                <div class="white"><img src="Wking.svg"></div>
+                <div class="gray"><img src="Wpawn.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Bking.svg"></div>
+            </div>
+            <!-- COLUMN 6 -->
+            <div class="column">
+                <div class="gray"><img src="Wbishop.svg"></div>
+                <div class="white"><img src="Wpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Bpawn.svg"></div>
+                <div class="white"><img src="Bbishop.svg"></div>
+            </div>
+            <!-- COLUMN 7 -->
+            <div class="column">
+                <div class="white"><img src="Wknight.svg"></div>
+                <div class="gray"><img src="Wpawn.svg"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"><img src="Bpawn.svg"></div>
+                <div class="gray"><img src="Bknight.svg"></div>
+            </div>
+            <!-- COLUMN 8 -->
+            <div class="column">
+                <div class="gray"><img src="Wrook.svg"></div>
+                <div class="white"><img src="Wpawn.svg"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"></div>
+                <div class="white"></div>
+                <div class="gray"><img src="Bpawn.svg"></div>
+                <div class="white"><img src="Brook.svg"></div>
+            </div>
+        </div>
+
+        <h6 id="ref">made by Victor Monta<br>
+            <a href="https://github.com/Montavictor" target="_blank"> <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" width="30px"> </a></h6> 
+    </div>
+</body>
+</html>
